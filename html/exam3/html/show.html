@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function(){
+				var url=decodeURI(location.search);
+				url=decodeURI(url);
+				var s=url.substr(1,url.length);
+				s=JSON.parse(s);
+				$.each(s,function(i,n){
+					$("#dataFrame").append(n.name+":"+n.value+"</br>");
+				})
+			})
+
+		</script>
+	</head>
+	<body>
+		<div id="dataFrame">
+			
+		</div>
+	</body>
+</html>

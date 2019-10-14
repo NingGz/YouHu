@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>成绩汇总</title>
+		<link rel="stylesheet" type="text/css" href="../css/summary.css"/>
+		<script src="../js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mustache.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/summary.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<!-- 定义一个循环模板 用于输出json内容 -->
+	<script type="text/x-mustache" id="script_model1">
+		<tr>
+			<td>序号</td>
+			<td>姓名</td>
+			<td>学号</td>
+			<td>班级</td>
+			<td>数学</td>
+			<td>语文</td>
+			<td>英语</td>
+			<td>总分</td>
+			<td>平均分</td>
+			<td>录入日期</td>
+			<td>操作</td>
+		</tr>
+		{{#sum}}
+		<tr>
+			<td>{{no}}</td>
+			<td>{{name}}</td>
+			<td>{{num}}</td>
+			<td>{{grade}}</td>
+			<td>{{maths}}</td>
+			<td>{{Chinese}}</td>
+			<td>{{English}}</td>
+			<td>{{total}}</td>
+			<td>{{avg}}</td>
+			<td>{{time}}</td>
+			<td><input type="button" value="删除" onclick="deleteData({{no}})"></td>
+		</tr>
+		{{/sum}}
+	</script>
+	<body>
+		<h2>成绩汇总</h2>
+		<div>
+			<table id="basetable" border="1">
+				
+			</table><br>
+			<div id="maxScore"> 
+			</div>
+		</div>
+
+	</body>
+</html>

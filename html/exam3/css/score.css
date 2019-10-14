@@ -1,0 +1,15 @@
+#basetable {
+	margin: 0 auto;
+	text-align: right;
+}
+#error_message{
+	color: red;
+	text-align: center;
+}
+tr:nth-of-type(1) {
+	text-align: center;
+}
+
+#tr_last {
+	text-align: center;
+}

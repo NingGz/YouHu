@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/tableBox.css"/>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/mustache.js"></script>
+		<script type="text/javascript" src="js/summary.js"></script>
+	</head>
+	<script type="text/X-mustache" id="theModel">
+		<tr>
+			<th>序号</th>
+			<th>姓名</th>
+			<th>学号</th>
+			<th>班级</th>
+			<th>数学</th>
+			<th>语文</th>
+			<th>英语</th>
+			<th>总分</th>
+			<th>平均分</th>
+			<th>录入日期</th>
+			<th>操作</th>
+		</tr>
+		{{#theAppends}}
+		<tr>
+			<td>{{no}}</td>
+			<td>{{name}}</td>
+			<td>{{num}}</td>
+			<td>{{grade}}</td>
+			<td>{{maths}}</td>
+			<td>{{Chinese}}</td>
+			<td>{{English}}</td>
+			<td>{{sum}}</td>
+			<td>{{avg}}</td>
+			<td>{{time}}</td>
+			<td><input type="button" value="删除" onclick="reduce({{no}})"/></td>
+		</tr>
+		{{/theAppends}}
+	</script>
+	<body>
+		<div id="titleBox">成绩汇总</div>
+		<div id="tableBox">
+			<table border="1" cellspacing="100px" id="firstTable">
+				
+			</table>
+			<div id="maxBox"></div>
+		</div>		
+	</body>
+	
+</html>

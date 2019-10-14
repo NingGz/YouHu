@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/score.css"/>
+		<script language="JavaScript" type="text/javascript" src="../My97DatePicker/WdatePicker.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="../js/score.js"></script>
+	</head>
+	<body>
+		<div id="titleBox">成绩单</div>
+		<div id="mainBox">
+			<table cellpadding="10px">
+				<tr>
+					<td><label>姓名:</label></td>
+					<td><input type="text" name="" id="name" value="" /></td>
+					<td><label>学号:</label></td>
+					<td><input type="text" name="" id="num" value="" /></td>
+				</tr>
+				<tr>
+					<td><label>方向:</label></td>
+					<td id="choseBox">
+						<input type="radio" name="chose" id="" value="1"/>.java&nbsp;&nbsp;
+						<input type="radio" name="chose" id="" value="2"/>.net &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+					<td>登记时间:</td>
+					<td><input class="Wdate" type="text" name="time" onclick="WdatePicker({el:this,dateFmt:'yyyy-MM-dd HH:mm:ss'})"/></td>
+				</tr>
+				<tr>
+					<td id="orScore"><label>.java基础成绩:</label></td>
+					<td><input type="text" id="javaScore" value="" /></td>
+					<td><label>数据库成绩:</label></td>
+					<td><input type="text" id="dateScore" value="" /></td>
+				</tr>
+				<tr>
+					<td><label>结业成绩:</label></td>
+					<td><input type="text" id="endScore" value="" /></td>
+					<td><label>平时成绩:</label></td>
+					<td><input type="text" id="dayScore" value="" /></td>
+				</tr>
+				<tr>
+					<td>总分:</td>
+					<td><input type="text" id="sumScore" value="" /></td>
+					<td>平均分:</td>
+					<td><input type="text" id="avgScore" value="" /></td>
+				</tr>
+			</table>
+		</div>
+		<div id="btnBox">
+			<input type="button" id="subTn" value="提交" />
+			<input type="button" id="resetTn" value="重置"/>
+		</div>
+		<div id="errorBox"></div>
+	</body>
+</html>

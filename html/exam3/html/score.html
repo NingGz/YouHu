@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/score.css" />
+		<script src="../js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script language="javascript" type="text/javascript" src="../My97DatePicker/WdatePicker.js"></script>
+		<script src="../js/score.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<form id="baseForm">
+			<table id="basetable">
+				<tr>
+					<td colspan="4">
+						<h2>成绩单</h2>
+					</td>
+				</tr>
+				<tr>
+					<td id="error_message" colspan="4"></td>
+				</tr>
+				<tr>
+					<td><label>姓名</label>:</td>
+					<td><input type="text" name="name"></td>
+					<td><label>学号</label>:</td>
+					<td><input type="text" name="number"></td>
+				</tr>
+				<tr>
+					<td><label>方向</label>:</td>
+					<td>
+						<input type="radio" name="direction" value="java开发" checked="checked"/>java开发
+						<input type="radio" name="direction" value=".Net开发" />.Net开发
+					</td>
+					<td><label>登记时间</label>:</td>
+					<td>
+						<input class="Wdate" name="time" type="text" onClick="WdatePicker({el:this,dateFmt:'yyyy-MM-dd HH:mm:ss'})">
+					</td>
+				</tr>
+				<tr>
+					<td id="direction_name"><label>java基础成绩</label>:</td>
+					<td id="direction_value"><input type="text" name='direction_score'></td>
+					<td><label>数据库成绩</label>:</td>
+					<td><input type="text" name="sqlScore"></td>
+				</tr>
+				<tr>
+					<td><label>结业成绩</label>:</td>
+					<td><input type="text" name="finalScore" class="score"></td>
+					<td><label>平时成绩</label>:</td>
+					<td><input type="text" name="eveScore" class="score"></td>
+				</tr>
+				<tr>
+					<td><label>总分</label>:</td>
+					<td><input type="text" name="totalScore" disabled="disabled"></td>
+					<td><label>平均分</label>:</td>
+					<td><input type="text" name="avgScore" disabled="disabled"></td>
+				</tr>
+				<tr id="tr_last">
+					<td colspan="2">
+						<input type="button" id="sub_from" value="提交">
+					</td>
+					<td colspan="2">
+						<input type="reset" value="取消">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

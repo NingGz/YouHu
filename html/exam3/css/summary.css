@@ -1,0 +1,15 @@
+*{
+	text-align: center;
+}
+tr:nth-of-type(1){
+	font-weight: bolder;
+}
+#basetable{
+	border-collapse: collapse;	
+	margin: 0 auto;
+}
+#maxScore{
+	width: 560px;
+	margin: 0 auto;
+	text-align: left;
+}
