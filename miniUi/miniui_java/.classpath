@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="miniui_java/src"/>
+	<classpathentry kind="lib" path="miniui_java/WebContent/WEB-INF/lib/cos.jar"/>
+	<classpathentry kind="lib" path="miniui_java/WebContent/WEB-INF/lib/flexjson-2.0.jar"/>
+	<classpathentry kind="lib" path="miniui_java/WebContent/WEB-INF/lib/javax.servlet.jar"/>
+	<classpathentry kind="lib" path="miniui_java/WebContent/WEB-INF/lib/jxl.jar"/>
+	<classpathentry kind="lib" path="miniui_java/WebContent/WEB-INF/lib/mysql-connector-java-3.1.11-bin.jar"/>
+	<classpathentry kind="lib" path="miniui_java/WebContent/WEB-INF/lib/ojdbc14-10.2.0.4.jar"/>
+	<classpathentry kind="lib" path="miniui_java/WebContent/WEB-INF/lib/sqljdbc.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="output" path="miniui_java/build/classes"/>
+</classpath>
